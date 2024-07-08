@@ -19,7 +19,7 @@ def _post(request):
         res = serviceGenry.post(request.body)
         return HttpResponse(res)
     except serviceGenry.ValidateExeption:
-        return HttpResponseBadRequest("Validate Eror-error-eror")    
+        return HttpResponseBadRequest("Validate Eror-error-eror-test")    
     except:
         return HttpResponseServerError()
 
